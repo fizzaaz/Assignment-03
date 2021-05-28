@@ -25,7 +25,10 @@ In this projects, HTML and CSS and Javascript documents create a random password
 This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document.
 <h3>Structure & Features</h3>
 This page includes <br>
-<ul>
-  <li>generate button</li>
-This will send the user a series of prompts and confirms
-After user data is collected, a random password will be generated using Javascript
+<ol>
+  <li><h5>Generate Button</h5></li>
+  This will send the user a series of prompts and confirms. After user data is collected, a random password will be generated using Javascript.
+  <li><h5>Textarea</h5></li>
+  This textarea will display the users password once it is generated.
+  </ol>
+
