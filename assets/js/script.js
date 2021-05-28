@@ -11,10 +11,12 @@ var Characters="";
 function generatePassword() {
     var pass="";
     length = parseInt(prompt("Please! Enter the Length of your Password?"));
-    if (length < 8) {
+    console.log(length)
+
+    if (length < 8 || !length) {
         alert("Opps! Try Again.\nYour Password should be atleast 8 Characters long.")
     }
-    else if (length >= 128) {
+    else if (length >128) {
         alert("Opps! Try Again.\nYour Password should be less than 128 Characters.")
     }
     else {
@@ -27,67 +29,68 @@ function generatePassword() {
         }
         else if (checkNum && checkSpec && checkUp && checklow)//4 possbile choices
         {
-            Characters.concat(numChar,specChar,upChar,lowChar);//concatinates the choosed characters
+            Characters=numChar.concat(specChar,upChar,lowChar);//concatinates the choosed characters
         }
         else if (checkNum && checkSpec && checkUp && !checklow)//3 possbile choices
         {
-            Characters.concat(numChar,specChar,upChar);//concatinates the choosed characters
+            Characters=numChar.concat(specChar,upChar);//concatinates the choosed characters
         }
         else if (checkNum && checkSpec && !checkUp && checklow)//3 possbile choices
         {
-            Characters.concat(numChar,specChar,lowChar);//concatinates the choosed characters
+            Characters=numChar.concat(specChar,lowChar);//concatinates the choosed characters
         }
         else if (checkNum && !checkSpec && checkUp && checklow)//3 possbile choices
         {
-            Characters.concat(numChar,lowChar,upChar);//concatinates the choosed characters
+            Characters=numChar.concat(lowChar,upChar);//concatinates the choosed characters
 
         }
         else if (!checkNum && checkSpec && checkUp && checklow)//3 possbile choices
         {
-            Characters.concat(lowChar,specChar,upChar);//concatinates the choosed characters
+            Characters=lowChar.concat(specChar,upChar);//concatinates the choosed characters
 
         }
         else if (!checkNum && !checkSpec && checkUp && checklow)//2 possbile choices
         {
-            Characters.concat(lowChar,upChar);//concatinates the choosed characters
+            Characters=lowChar.concat(upChar);//concatinates the choosed characters
         }
         else if (!checkNum && checkSpec && !checkUp && checklow)//2 possbile choices
         {
-            Characters.concat(specChar,lowChar);//concatinates the choosed characters
+            Characters=specChar.concat(lowChar);//concatinates the choosed characters
         }
         else if (!checkNum && checkSpec && checkUp && !checklow)//2 possbile choices
         {
-            Characters.concat(specChar,upChar);//concatinates the choosed characters
+            Characters=specChar.concat(upChar);//concatinates the choosed characters
         }
         else if (checkNum && !checkSpec && !checkUp && checklow)//2 possbile choices
         {
-            Characters.concat(numChar,lowChar);//concatinates the choosed characters
+            Characters=numChar.concat(lowChar);//concatinates the choosed characters
         }
         else if (checkNum && !checkSpec && checkUp && !checklow)//2 possbile choices
         {
-            Characters.concat(numChar,upChar);//concatinates the choosed characters          
+            Characters=numChar.concat(upChar);//concatinates the choosed characters          
         }
         else if (checkNum && checkSpec && !checkUp && !checklow)//2 possbile choices
         {
-            Characters.concat(numChar,specChar);//concatinates the choosed characters
+            Characters=numChar.concat(specChar);//concatinates the choosed characters
         }
         else if (checkNum)//1 possbile choice
         {
-            Characters+=numChar;
+            Characters=numChar;
         }
         else if (checkSpec)//1 possbile choices
         {
-            Characters+=specChar;
+            Characters=specChar;
         }
         else if(checkUp)//1 possible choice
         {
-            Characters+=upChar;
+            Characters=upChar;
         }
         else// last possible choice
         {
-            Characters+=lowChar;
+            Characters=lowChar;
+            console.log(Characters)
         }
-        for(var i=0;i<=length;i++)
+        for(var i=0;i<length;i++)
         {
             pass+=Characters.charAt(Math.floor(Math.random()*Characters.length));
         }
