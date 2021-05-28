@@ -1,4 +1,4 @@
-// Assignment code here
+// declaring and assigning possible choices for password
 var numChar = "123456789"
 var specChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 var lowChar = "abcdefghijklmnopqrstuvwxyz"
