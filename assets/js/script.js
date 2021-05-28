@@ -9,7 +9,7 @@ var checkNum,checkSpec,checkUp ,checklow;
 var Characters="";
 
 function generatePassword() {
-    var pass;
+    var pass="";
     length = parseInt(prompt("Please! Enter the Length of your Password?"));
     if (length < 8) {
         alert("Opps! Try Again.\nYour Password should be atleast 8 Characters long.")
