@@ -8,8 +8,8 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 <br>
 <br>
 <ul>
-  <li><a href="https://github.com/fizzaaz/Assignment-03"> GitHub Repository</a></li>
-  <li><a href="https://fizzaaz.github.io/Assignment-03/">Deployed Github IO</a></li>
+  <li><a href="https://github.com/fizzaaz/password-generator"> GitHub Repository</a></li>
+  <li><a href="https://fizzaaz.github.io/password-generator/">Deployed Github IO</a></li>
   <li><a href="https://drive.google.com/file/d/1UjLUk5wtVuOe4X4ocCfWyF-hh__2oLTJ/view/">Full Demo Video</a></li>
 
 
